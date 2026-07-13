@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WWILISS.STUDIO — original cinematic electronic music inspired by night drives, rain and real-life stories.">
+  <meta name="theme-color" content="#050505">
+  <meta property="og:title" content="WWILISS.STUDIO">
+  <meta property="og:description" content="Original cinematic music. Created after work. Inspired by real life.">
+  <meta property="og:image" content="assets/images/covers/one-listener.png">
+  <title>WWILISS.STUDIO | Original Cinematic Music</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="rain-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="WWILISS.STUDIO home">
+      <span class="brand-mark">WS</span>
+      <span>WWILISS.STUDIO</span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav">
+      <a href="#music">Music</a>
+      <a href="#story">Story</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Independent cinematic music project</p>
+        <h1>WWILISS<span>.STUDIO</span></h1>
+        <p class="hero-copy">Original cinematic electronic music inspired by night drives, rain, survival, ambition and the stories we carry.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#music">Listen now</a>
+          <a class="btn btn-ghost" href="#story">Discover the story</a>
+        </div>
+        <p class="hero-note">Created after work. Built from real life.</p>
+      </div>
+      <a class="scroll-cue" href="#music" aria-label="Scroll to music">Scroll</a>
+    </section>
+
+    <section id="music" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Latest releases</p>
+        <h2>Music with a story behind it</h2>
+        <p>Dark atmosphere, deep bass and cinematic emotion. No empty spectacle. Just songs built one late night at a time.</p>
+      </div>
+
+      <div class="featured-grid">
+        <article class="featured-card reveal">
+          <img src="assets/images/covers/one-listener.png" alt="One Listener cover artwork">
+          <div class="featured-copy">
+            <span class="tag">Latest release</span>
+            <h3>One Listener</h3>
+            <p>Every song has a reason. Maybe it’s you.</p>
+            <div class="card-actions">
+              <a class="btn btn-primary platform-link" data-platform="spotify" href="#">Spotify</a>
+              <a class="btn btn-ghost platform-link" data-platform="youtube" href="#">YouTube</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="featured-card reveal">
+          <img src="assets/images/covers/2-percent-battery.png" alt="2% Battery cover artwork">
+          <div class="featured-copy">
+            <span class="tag">New release</span>
+            <h3>2% Battery</h3>
+            <p>Running on the last light left.</p>
+            <div class="card-actions">
+              <a class="btn btn-primary platform-link" data-platform="spotify" href="#">Spotify</a>
+              <a class="btn btn-ghost platform-link" data-platform="youtube" href="#">YouTube</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="catalog-grid" id="catalog-grid"></div>
+    </section>
+
+    <section id="story" class="story section">
+      <div class="story-image reveal">
+        <img src="assets/images/brand/artist-hero.png" alt="WWILISS.STUDIO artist identity artwork">
+      </div>
+      <div class="story-copy reveal">
+        <p class="eyebrow">Behind the music</p>
+        <h2>Made after the shift</h2>
+        <p>WWILISS.STUDIO is an independent Lithuanian music project based in Northern Ireland. The music is created after working hours, shaped by rainy nights, city lights and real-life experiences.</p>
+        <p>The sound blends cinematic electronic music, dark ambient textures, deep bass and emotional storytelling. Each track begins as a private thought and grows into something meant to reach another person.</p>
+        <blockquote>“Nobody knows me yet, but the story is still being written.”</blockquote>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Visual world</p>
+        <h2>Black, gold and rain</h2>
+      </div>
+      <div class="gallery-grid" id="gallery-grid"></div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="contact-panel reveal">
+        <p class="eyebrow">Listen • Follow • Connect</p>
+        <h2>Find WWILISS.STUDIO everywhere</h2>
+        <p>Streaming links are ready to be connected. One website, all platforms, and mercifully fewer places for people to get lost.</p>
+        <div class="social-grid">
+          <a class="social-link platform-link" data-platform="spotify" href="#">Spotify</a>
+          <a class="social-link platform-link" data-platform="youtube" href="#">YouTube</a>
+          <a class="social-link platform-link" data-platform="youtubeMusic" href="#">YouTube Music</a>
+          <a class="social-link platform-link" data-platform="appleMusic" href="#">Apple Music</a>
+          <a class="social-link platform-link" data-platform="tiktok" href="#">TikTok</a>
+          <a class="social-link platform-link" data-platform="facebook" href="#">Facebook</a>
+          <a class="social-link platform-link" data-platform="instagram" href="#">Instagram</a>
+          <a class="social-link platform-link" data-platform="beacons" href="#">All links</a>
+        </div>
+        <a class="email-link" href="mailto:wwiliss.studio@gmail.com">wwiliss.studio@gmail.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> WWILISS.STUDIO. All rights reserved.</p>
+    <p>Original cinematic music.</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close image">×</button>
+    <img src="" alt="">
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
