@@ -35,14 +35,33 @@
       <div class="hero-content reveal">
         <p class="eyebrow">Independent cinematic music project</p>
         <h1>WWILISS<span>.STUDIO</span></h1>
-        <p class="hero-copy">Original cinematic electronic music inspired by night drives, rain, survival, ambition and the stories we carry.</p>
+        <p class="hero-copy">Music written after work. Inspired by rainy nights, empty roads, quiet dreams and the belief that one listener can change everything.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#music">Listen now</a>
+          <a class="btn btn-primary platform-link" data-platform="spotify" href="#">Listen now</a>
           <a class="btn btn-ghost" href="#story">Discover the story</a>
         </div>
         <p class="hero-note">Created after work. Built from real life.</p>
       </div>
       <a class="scroll-cue" href="#music" aria-label="Scroll to music">Scroll</a>
+    </section>
+
+    <section class="now-playing section reveal" aria-labelledby="now-playing-title">
+      <div class="now-playing-copy">
+        <p class="eyebrow">Now playing</p>
+        <h2 id="now-playing-title">One Listener</h2>
+        <p>Every song has a reason. Maybe it’s you.</p>
+      </div>
+      <div class="player-shell">
+        <div class="player-art">
+          <img src="assets/images/covers/one-listener.png" alt="One Listener cover artwork">
+        </div>
+        <div class="player-info">
+          <span class="player-label">Featured track</span>
+          <strong>One Listener</strong>
+          <p>Connect your Spotify track in <code>js/config.js</code> to activate the player button.</p>
+          <a class="btn btn-primary platform-link" data-platform="spotify" href="#">Open in Spotify</a>
+        </div>
+      </div>
     </section>
 
     <section id="music" class="section">
@@ -90,8 +109,9 @@
       <div class="story-copy reveal">
         <p class="eyebrow">Behind the music</p>
         <h2>Made after the shift</h2>
-        <p>WWILISS.STUDIO is an independent Lithuanian music project based in Northern Ireland. The music is created after working hours, shaped by rainy nights, city lights and real-life experiences.</p>
-        <p>The sound blends cinematic electronic music, dark ambient textures, deep bass and emotional storytelling. Each track begins as a private thought and grows into something meant to reach another person.</p>
+        <p>I work full time. Every evening I come home, open the laptop, put on headphones and write another song.</p>
+        <p>WWILISS.STUDIO was not created because everything was perfectly planned. It was created because the ideas kept returning. Rainy nights, empty roads, hospital rooms, ambition, doubt and the need to keep going all became part of the music.</p>
+        <p>The project is Lithuanian, based in Northern Ireland, and built after working hours. One song at a time. One listener at a time.</p>
         <blockquote>“Nobody knows me yet, but the story is still being written.”</blockquote>
       </div>
     </section>
@@ -125,8 +145,19 @@
   </main>
 
   <footer>
-    <p>© <span id="year"></span> WWILISS.STUDIO. All rights reserved.</p>
-    <p>Original cinematic music.</p>
+    <div>
+      <strong>WWILISS.STUDIO</strong>
+      <p>Original cinematic music.</p>
+    </div>
+    <div class="footer-links">
+      <a class="platform-link" data-platform="spotify" href="#">Spotify</a>
+      <a class="platform-link" data-platform="appleMusic" href="#">Apple Music</a>
+      <a class="platform-link" data-platform="youtube" href="#">YouTube</a>
+      <a class="platform-link" data-platform="tiktok" href="#">TikTok</a>
+      <a class="platform-link" data-platform="facebook" href="#">Facebook</a>
+      <a class="platform-link" data-platform="instagram" href="#">Instagram</a>
+    </div>
+    <p>© <span id="year"></span> WWILISS.STUDIO</p>
   </footer>
 
   <div class="lightbox" id="lightbox" aria-hidden="true">

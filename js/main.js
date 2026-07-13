@@ -123,3 +123,19 @@ function drawRain() {
 resizeRain();
 drawRain();
 addEventListener("resize", resizeRain);
+
+
+// Subtle hero parallax
+const hero = document.querySelector(".hero");
+const heroBg = document.querySelector(".hero-bg");
+if (hero && heroBg && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  hero.addEventListener("pointermove", (event) => {
+    const rect = hero.getBoundingClientRect();
+    const x = (event.clientX - rect.left) / rect.width - 0.5;
+    const y = (event.clientY - rect.top) / rect.height - 0.5;
+    heroBg.style.transform = `scale(1.06) translate3d(${x * 10}px, ${y * 8}px, 0)`;
+  });
+  hero.addEventListener("pointerleave", () => {
+    heroBg.style.transform = "";
+  });
+}
